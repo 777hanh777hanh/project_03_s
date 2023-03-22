@@ -1,0 +1,61 @@
+@import './variable';
+
+.app {
+    margin-top: 42px;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 76px 122px;
+        background: $bgColorLight;
+        border-radius: 9999px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+
+        &--narrow {
+            gap: 5px;
+        }
+
+        &:first-child .app__name {
+            font-weight: 500;
+            font-size: 3.1rem;
+            line-height: 1.5;
+        }
+
+        &:nth-child(2) .app__name {
+            font-weight: 600;
+            font-size: 3.2rem;
+            line-height: 1.5;
+        }
+
+        &:nth-child(3) .app__name {
+            font-weight: 400;
+            font-size: 2.6rem;
+            line-height: 1.5;
+        }
+
+        &:nth-child(4) .app__name {
+            font-family: 'Sonsie One';
+            font-weight: 400;
+            font-size: 2.3rem;
+            line-height: 1.3;
+        }
+
+        &:last-child .app__name {
+            font-family: 'Poppins';
+            font-weight: 600;
+            font-size: 1.9rem;
+            line-height: 1.47;
+            letter-spacing: 0.11rem;
+        }
+    }
+
+    &__name {
+        color: $bgColor;
+    }
+}

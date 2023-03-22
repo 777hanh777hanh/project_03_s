@@ -126,3 +126,10 @@ table {
 a {
     text-decoration: none;
 }
+
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+}

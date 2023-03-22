@@ -28,6 +28,9 @@ body {
 }
 
 .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 173px;
     height: 57px;
     outline: none;
@@ -46,6 +49,22 @@ body {
         background: $bgColorLight;
         color: $bgColor;
     }
+
+    &--circle {
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+    }
+}
+
+.section__heading {
+    font-weight: 600;
+    color: $primaryColor;
+}
+
+.section__desc {
+    font-weight: 500;
+    color: $textColor;
 }
 
 // Header

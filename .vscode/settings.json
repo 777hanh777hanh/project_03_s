@@ -1,3 +1,4 @@
 {
-    "cSpell.words": ["MODULARS"]
+    "cSpell.words": ["MODULARS"],
+    "prettier.printWidth": 120
 }

@@ -62,9 +62,35 @@ body {
     color: $primaryColor;
 }
 
+.section__line {
+    display: inline-block;
+    width: 66px;
+    height: 2px;
+    background: currentColor;
+    margin-left: 11px;
+}
+
 .section__desc {
     font-weight: 500;
     color: $textColor;
+}
+
+.section__label {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.62;
+    color: $primaryColor;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 25px;
+        height: 1px;
+        background: $primaryColor;
+        margin-right: 21px;
+    }
 }
 
 // Header
@@ -72,3 +98,6 @@ body {
 
 // App
 @import './app';
+
+// Feature
+@import './service';

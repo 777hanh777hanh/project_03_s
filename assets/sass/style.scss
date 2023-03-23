@@ -93,6 +93,19 @@ body {
     }
 }
 
+.section__circle {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    background: #4dbb9a;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    filter: blur(137px);
+}
+
 // Header
 @import './header';
 
@@ -101,3 +114,9 @@ body {
 
 // Feature
 @import './service';
+
+// About Us
+@import './about';
+
+// Our Process
+@import './process';

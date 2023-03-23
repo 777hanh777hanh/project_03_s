@@ -85,6 +85,19 @@ body {
   margin-right: 21px;
 }
 
+.section__circle {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  background: #4dbb9a;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  filter: blur(137px);
+}
+
 .header {
   font-family: "Public Sans", sans-serif;
 }
@@ -248,18 +261,6 @@ body {
 .hero__img:nth-of-type(2) {
   align-self: flex-end;
 }
-.hero__circle {
-  position: absolute;
-  width: 340px;
-  height: 340px;
-  background: #4dbb9a;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  z-index: -1;
-  transform: translate(-50%, -50%);
-  filter: blur(137px);
-}
 .hero__pattern {
   position: absolute;
 }
@@ -390,6 +391,201 @@ body {
   max-width: 268px;
   font-size: 1.4rem;
   line-height: 1.71;
+}
+
+.about {
+  margin-top: 125px;
+}
+.about__inner {
+  display: flex;
+  gap: 64px;
+  position: relative;
+}
+.about__images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13px;
+  height: 557px;
+  gap: 21px;
+  position: relative;
+}
+.about__img {
+  display: block;
+  width: auto;
+  max-width: 284px;
+  height: 480px;
+  object-fit: cover;
+  box-shadow: 0px 4px 234px 11px rgba(59, 137, 71, 0.25);
+  border-radius: 210px;
+}
+.about__img:first-child {
+  margin-top: auto;
+}
+.about__card {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 19px 17px 11px;
+  font-family: "Public Sans", sans-serif;
+  border-radius: 8px;
+  box-shadow: 0px 7px 54px rgba(154, 154, 154, 0.25);
+  background: #fff;
+}
+.about__card-wide {
+  padding: 0 6px;
+}
+.about__card-heading {
+  font-size: 1.4rem;
+  line-height: 1;
+  text-align: center;
+}
+.about__card-desc {
+  font-weight: 400;
+  margin-top: 6px;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #575d5e;
+  opacity: 0.4;
+}
+.about__card-text {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.about__card-process {
+  margin-top: 10px;
+}
+.about__card-line {
+  --process: 40%;
+  margin-top: 3px;
+  width: 100%;
+  height: 2px;
+  background: #eaeaea;
+  border-radius: 10px;
+  position: relative;
+}
+.about__card-line::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: var(--process);
+  height: 2px;
+  background: #83a17d;
+  border-radius: 10px;
+}
+.about__card-status {
+  margin-top: 3px;
+  text-align: end;
+}
+.about__card-circle {
+  --width-circle: 11px;
+  margin-top: 3px;
+  margin-left: 2px;
+  width: 11px;
+  height: 11px;
+  position: relative;
+}
+.about__card-circle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  border: none;
+  outline: none;
+  width: var(--width-circle);
+  height: var(--width-circle);
+  border-radius: 50%;
+  background: #eaeaea;
+}
+.about__card-circle::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--width-circle) / 2);
+  left: calc(var(--width-circle) / 2);
+  transform: translate(-50%, -50%);
+  display: block;
+  border: none;
+  outline: none;
+  width: calc(var(--width-circle) / 2.2);
+  height: calc(var(--width-circle) / 2.2);
+  border-radius: 50%;
+  background: #143c3c;
+}
+.about__card-row {
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about__card-avatars {
+  display: flex;
+}
+.about__card-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px #fff;
+  background-color: #e2eddf;
+  margin-left: -5px;
+}
+.about__card-avatar-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.about__card-avatar-text {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #ffffff;
+}
+.about__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  gap: 24px;
+  margin-top: 18px;
+  border-bottom: 1px solid #83a17d;
+}
+.about__heading {
+  margin-top: 20px;
+  font-size: 4.2rem;
+  line-height: 1.24;
+}
+.about__heading--sub {
+  margin-top: 0;
+}
+.about__desc {
+  margin-top: 11px;
+  font-size: 1.6rem;
+  line-height: 1.62;
+}
+.about__desc--sub {
+  margin-top: 0;
+  font-size: 1.4rem;
+  line-height: 1.71;
+  max-width: 364px;
+}
+.about__pattern {
+  position: absolute;
+  left: 46px;
+  top: -18px;
+}
+.about__pattern-line {
+  top: 18px;
+  left: 83px;
 }
 
 /*# sourceMappingURL=style.css.map */

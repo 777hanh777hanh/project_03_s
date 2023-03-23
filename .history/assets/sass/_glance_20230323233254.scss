@@ -1,0 +1,19 @@
+@import './variable';
+
+.glance {
+    margin-top: 148px;
+
+    &__inner {
+        padding-top: 116px;
+        padding-bottom: 63px;
+        background: $bgColor;
+    }
+
+    &__heading {
+        font-size: 42px;
+        line-height: 52px;
+        /* or 124% */
+
+        color: #e7f9f9;
+    }
+}

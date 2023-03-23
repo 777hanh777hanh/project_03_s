@@ -1,0 +1,10 @@
+@import './variable';
+
+.glance {
+    margin-top: 140px;
+
+    &__inner {
+        padding-top: 116px;
+        padding-bottom: 63px;
+    }
+}

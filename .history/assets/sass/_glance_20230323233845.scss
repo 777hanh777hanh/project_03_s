@@ -1,0 +1,47 @@
+@import './variable';
+
+.glance {
+    margin-top: 148px;
+
+    &__inner {
+        padding-top: 116px;
+        padding-bottom: 63px;
+        background: $bgColor;
+    }
+
+    &__heading {
+        font-size: 4.2rem;
+        line-height: 1.24;
+        color: #e7f9f9;
+    }
+
+    &__line-heading {
+        background: #83a17d;
+    }
+
+    &__desc {
+        font-size: 1.8rem;
+        line-height: 1.56;
+        color: $textColorLight;
+    }
+
+    &__action {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-family: 'Public Sans';
+    }
+
+    &__btn {
+        border: none;
+        outline: none;
+        background: transparent;
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 1.56;
+    }
+
+    &__icon {
+        transform: rotateY(180deg);
+    }
+}

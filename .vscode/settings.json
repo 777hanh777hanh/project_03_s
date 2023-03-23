@@ -1,4 +1,5 @@
 {
     "cSpell.words": ["Boluethat", "MODULARS"],
-    "prettier.printWidth": 120
+    "prettier.printWidth": 120,
+    "markdown.preview.lineHeight": 2.3
 }

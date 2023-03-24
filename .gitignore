@@ -1,6 +1,8 @@
 .sass-cache/
+.history/
 *.css.map
 *.sass.map
 *.scss.map
 
 *:Zone.Identifier
+

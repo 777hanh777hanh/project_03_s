@@ -1,0 +1,33 @@
+@import './variable';
+
+.feature {
+    margin-top: 140px;
+    text-align: center;
+
+    &__heading {
+        font-size: 4.2rem;
+        line-height: 1.24;
+    }
+
+    &__desc {
+        font-size: 1.6rem;
+        line-height: 1.62;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 45px;
+    }
+
+    &__item {
+        border: 1.5px solid #cecece;
+        border-radius: 160px;
+        width: 350px;
+        height: 362px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

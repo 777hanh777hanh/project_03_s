@@ -17,29 +17,19 @@
     &__list {
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
         gap: 45px;
-        margin-top: 44px;
-        height: 421px;
     }
 
     &__item {
+        border: 1.5px solid #cecece;
+        border-radius: 160px;
+        width: 350px;
+        height: 362px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0 43px;
-        width: 350px;
-        height: 362px;
-        border: 1.5px solid #cecece;
-        border-radius: 160px;
-        transition: all 0.23s ease-out;
-
-        &:hover {
-            border-color: transparent;
-            box-shadow: 0px 36px 100px rgba(111, 120, 111, 0.2);
-            transform: translateY(-59px);
-        }
     }
 
     &__item-heading {
@@ -49,7 +39,6 @@
     }
 
     &__item-desc {
-        margin-top: 9px;
         font-size: 1.4rem;
         line-height: 1.71;
     }

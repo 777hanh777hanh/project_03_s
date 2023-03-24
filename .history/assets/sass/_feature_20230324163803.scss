@@ -17,10 +17,8 @@
     &__list {
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
         gap: 45px;
-        margin-top: 44px;
-        height: 421px;
     }
 
     &__item {
@@ -33,12 +31,10 @@
         height: 362px;
         border: 1.5px solid #cecece;
         border-radius: 160px;
-        transition: all 0.23s ease-out;
 
         &:hover {
-            border-color: transparent;
             box-shadow: 0px 36px 100px rgba(111, 120, 111, 0.2);
-            transform: translateY(-59px);
+            border-radius: 160px;
         }
     }
 

@@ -1,0 +1,10 @@
+@import './variable';
+
+.feature {
+    margin-top: 140px;
+
+    &__heading {
+        font-size: 4.2rem;
+        line-height: 1.24;
+    }
+}
